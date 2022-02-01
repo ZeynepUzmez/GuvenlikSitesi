@@ -1,0 +1,634 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0.7)),url("titizfoto/titizarka1.jpg");
+    background-position: center;
+    background-size: cover;
+    position:relative;
+
+}
+.headerblg{
+    display: flex;
+    padding: 3px 10px;
+    justify-content: space-between;
+    font-size: 15px;
+    background-color: rgba(255, 251, 0, 0.877);
+    height: 2%;
+}
+.headerblg span{
+margin-bottom: 3px;
+float: left;
+
+}
+.headerblg .fas{
+    color: rgb(53,58,64);
+   
+
+}
+.headerblg p{
+    color: rgb(53,58,64);
+    font-weight: 500;
+    
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 85px;
+    float: left; 
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    margin-top: 20px;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px ;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgba(255, 251, 0, 0.877);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid  rgba(255, 251, 0, 0.877);
+    background: rgba(255, 251, 0, 0.877);
+    transition: 1s;
+}
+nav .fa {
+    display: none;
+}
+@media (max-width:700px) {
+    
+    .sub-header h1{
+        font-size: 24px;
+    }
+    .sub-header .headerblg p{
+        font-size: 13px;
+    }
+    
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links{
+        position: fixed;
+        display: block;
+        background:rgba(255, 251, 0, 0.877) ;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        float: right;
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    
+}
+.hakkinda{
+    background-color: whitesmoke;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.hakicerik{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid rgb(53,58,64);
+}
+.hakicerik h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+ .hakicerik p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.hero-btn1{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid  rgba(255, 251, 0, 0.877);
+    padding: 12px 34px;
+    font-size: 13px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn1:hover{
+    border: 1px solid  rgba(0, 0, 0, 0.877);
+    background: rgba(255, 251, 0, 0.877);
+    transition: 1s;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.hizmetlerimiz{
+    height: 120%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  
+}
+.hizmetcol{
+    height: 200px;
+    margin-left: 10px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.hizmetcol img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.layer{
+    background:transparent ;
+    height: 100%;
+    width: 100% ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{   
+     background:rgba(255, 251, 0, 0.877) ;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(53,58,64);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.referanslar{
+    width: 100%;
+    background-color: whitesmoke;
+    height: 35vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  
+}
+
+.post-container {
+    height: fit-content;
+    width: 100%;
+    display:flex;
+    
+   
+}
+
+.post-container .post{
+    width: 200px;
+    height: 150px;
+    background-color: rgba(255, 251, 0, 0.877);
+    box-shadow:  0 3px 5px rgba(0, 0, 0, 3);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+
+}
+.post-container .post .image img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.post-container .post .content{
+    padding:0 20px;
+
+}
+
+.post-container .post .content .link{
+    display:block ;
+    color: #ebe1e1;
+
+    border: 1px solid white;
+}
+.post-container .post .content .link:hover{
+    color: #555555;
+}
+.cta{
+    height: 12vh;
+    margin-top: 100px;
+    margin: 100px auto;
+    width: 80%;
+    background-color: rgb(53,58,64) ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    border-bottom: 10px solid rgba(255, 251, 0, 0.877);
+    border-right: 15px solid rgba(255, 251, 0, 0.877);
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+    .layer h3{
+        width: 100%;
+        font-weight: 400;
+        color: rgb(53,58,64);
+        font-size: 18px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(53,58,64) ;
+}
+footer .ficerik {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+footer .ficerik .sec{
+    margin-right: 30px;
+    margin-left: 10px;
+
+}
+footer .ficerik .sec.about{
+    width: 40%;
+
+}
+footer .ficerik .sec.sec.about h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: white;
+}
+footer .ficerik .sec.sec.about p{
+    color: white;
+}
+
+footer .ficerik .sec.about h2::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgba(255, 251, 0, 0.877);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+footer .ficerik .sec.about h2:hover::after{
+    width: 100%;
+
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+    margin-right: 200px;
+    
+}
+.sci li {
+list-style: none;
+padding: 4px;
+
+}
+.sci li a{
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:rgba(255, 251, 0, 0.877);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background: #fff;
+}
+.sci li a .fa{
+    font-size: 20px;
+
+}
+footer .ficerik .sec.quickLinks h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+footer .ficerik .sec.quickLinks h2::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgba(255, 251, 0, 0.877);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+footer .ficerik .sec.quickLinks h2:hover::after{
+    width: 100%;
+
+}
+.quickLinks{
+    position: relative;
+    width: 25%;
+    margin-left:auto;
+}
+.quickLinks ul li {
+    list-style: none;
+    
+}
+.quickLinks ul li a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: rgba(255, 251, 0, 0.877);
+}
+footer .ficerik .sec.quickLinks h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+footer .ficerik .sec.contact h2::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgba(255, 251, 0, 0.877);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+footer .ficerik .sec.contact h2:hover::after{
+    width: 100%;
+
+}
+.contact{
+    
+    position: relative;
+    width: calc(35%-60px);
+    margin-right: 0 !important;
+}
+.contact ul li {
+    list-style: none;
+}
+.contact ul li a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.contact .fas{
+    color: white;
+}
+.contact span{
+    color: white;padding: 10px;
+}
+footer .ficerik .sec.contact h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: white;
+}
+/*ic sayfaların cssi*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0.7)),url("titizfoto/titizarka1.jpg");
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    text-align: center;
+    color: white;
+    
+
+}
+.sub-header .headerblg{
+    display: flex;
+    padding: 3px 10px;
+    justify-content: space-between;
+    
+    background-color: rgba(255, 251, 0, 0.877);
+    height: 12%;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+.hakkindaic{
+    width: 85%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.hakkindaic-col{
+    flex-basis: 48%;
+    padding: 30px;
+}
+.hakkindaic-col img{
+    width: 100%;
+}
+.hakkindaic-col h1{
+    padding-top: 0;
+}
+.hakkindaic-col p{
+    padding: 40px 0 25px;
+}
+/*fotogaleri css*/
+.gallery{
+    min-height: 100vh;
+    background: #e0e0e0;
+    padding-bottom: 100px;
+
+}
+.gallery .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery .image-container .image{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border:15px solid white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+.gallery .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery .image-container .image:hover img{
+    transform: scale(1.4);
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.iletisim{
+    width: 80%;
+    margin: auto;
+}
+.iletisimcol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.iletisimcol h3{
+    margin-left: 72px;
+}
+.iletisimcol div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}  
+.iletisimcol div .fa{
+    font-size: 28px;
+    color: rgba(255, 251, 0, 0.877);
+    margin: 10px;
+    margin-right: 30px;
+
+}
+.iletisimcol div h5{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #555555;
+    font-weight: 400;
+}
+.iletisimcol input , .iletisimcol textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+.fab{
+    color: #555555;
+}
